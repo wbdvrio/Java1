@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payroll</title>
+</head>
+<body>
+    
+    
+    <script>
+        const dailyRate = parseFloat(prompt('What is your daily rate: '));
+        const daysInamonth = parseFloat(prompt('Your days work in a month: '));
+        const overtime = parseFloat(prompt('Overtime hours work: '));
+        const sss = 500;
+        const philHealth = 300;
+        const pagIbig = 200;
+        const deduction = sss + philHealth + pagIbig;
+        const yourOvertime = overtime * (dailyRate / 8) * 1.5;
+        
+        const totalPayroll = daysInamonth * dailyRate + yourOvertime - deduction;
+        document.write("Your total payroll is: ",totalPayroll)
+    </script>
+</body>
+</html>
